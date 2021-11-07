@@ -4,16 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Duck5 {
-    private Egg6 egg;
-
+public class Box {
     @Autowired
-    public Duck5(Egg6 egg) {
-        this.egg = egg;
-    }
+    private Rabbit4 rabbit;
 
     @Override
     public String toString() {
-        return ", в утке яйцо " + egg.toString();
+        return ", в сундуке заяц " + rabbit.toString();
     }
 }
